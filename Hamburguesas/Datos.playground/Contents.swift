@@ -68,3 +68,37 @@ var misHamburguesas = ColeccionDeHamburguesa()
 misHamburguesas.hamburguesas.count
 misHamburguesas.obtenHamburguesa()
 
+class ColeccionDeColores {
+    let colores: [UIColor] = [
+        UIColor(red: 200/255, green: 100/255, blue: 75/255, alpha: 1),
+        UIColor(red: 165/255, green: 120/255, blue: 175/255, alpha: 1),
+        UIColor(red: 220/255, green: 80/255, blue: 120/255, alpha: 1),
+        UIColor(red: 80/255, green: 20/255, blue: 58/255, alpha: 1),
+        UIColor(red: 220/255, green: 200/255, blue: 155/255, alpha: 1),
+        UIColor(red: 170/255, green: 80/255, blue: 130/255, alpha: 1),
+        UIColor(red: 110/255, green: 70/255, blue: 75/255, alpha: 1),
+        UIColor(red: 85/255, green: 130/255, blue: 87/255, alpha: 1),
+        UIColor(red: 210/255, green: 105/255, blue: 45/255, alpha: 1),
+        UIColor(red: 205/255, green: 140/255, blue: 90/255, alpha: 1)
+    ]
+    
+    func obtenColor() -> UIColor {
+        return colores[Int(arc4random()) % colores.count]
+
+    }
+}
+
+var misColores = ColeccionDeColores()
+misColores.obtenColor()
+
+
+
+
+
+
+
+
+
+
+
+

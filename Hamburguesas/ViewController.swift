@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblPais: UILabel!
+    @IBOutlet weak var lblHamburguesa: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    var coleccionDePaises = ColeccionDePaises()
+    var coleccionDeHamburguesa = ColeccionDeHamburguesa()
+    var coleccionDeColores = ColeccionDeColores()
+    
+    @IBAction func cambiarDePaisYDeHamburguesa(sender: AnyObject) {
+        lblHamburguesa.text = coleccionDeHamburguesa.obtenHamburguesa()
+        lblPais.text = coleccionDePaises.obtenPais()
+        let color = coleccionDeColores.obtenColor()
+        view.backgroundColor = color
+        view.tintColor = color
+    }
 }
 
