@@ -12,6 +12,7 @@
 		563F63E21C3310DE00EBF4B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563F63E01C3310DE00EBF4B8 /* Main.storyboard */; };
 		563F63E41C3310DE00EBF4B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563F63E31C3310DE00EBF4B8 /* Assets.xcassets */; };
 		563F63E71C3310DE00EBF4B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563F63E51C3310DE00EBF4B8 /* LaunchScreen.storyboard */; };
+		563F63EF1C33125B00EBF4B8 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F63EE1C33125B00EBF4B8 /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		563F63E31C3310DE00EBF4B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563F63E61C3310DE00EBF4B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563F63E81C3310DE00EBF4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563F63EE1C33125B00EBF4B8 /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		563F63F21C33148F00EBF4B8 /* Datos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Datos.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,18 @@
 				563F63E31C3310DE00EBF4B8 /* Assets.xcassets */,
 				563F63E51C3310DE00EBF4B8 /* LaunchScreen.storyboard */,
 				563F63E81C3310DE00EBF4B8 /* Info.plist */,
+				563F63EE1C33125B00EBF4B8 /* Datos.swift */,
+				563F63F01C3313EF00EBF4B8 /* Playgrounds */,
 			);
 			path = Hamburguesas;
+			sourceTree = "<group>";
+		};
+		563F63F01C3313EF00EBF4B8 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				563F63F21C33148F00EBF4B8 /* Datos.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +150,7 @@
 			files = (
 				563F63DF1C3310DE00EBF4B8 /* ViewController.swift in Sources */,
 				563F63DD1C3310DE00EBF4B8 /* AppDelegate.swift in Sources */,
+				563F63EF1C33125B00EBF4B8 /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
