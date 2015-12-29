@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,8 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-3w-lVj">
+                                <rect key="frame" x="106" y="353" width="107.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SWj-gF-5f6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyY-fO-rBR">
-                                <rect key="frame" x="16" y="273" width="280" height="21"/>
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jse-2q-JuK"/>
                                     <constraint firstAttribute="width" constant="280" id="k11-EB-bzW"/>
@@ -28,18 +36,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-3w-lVj">
-                                <rect key="frame" x="16" y="353" width="280" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="SWj-gF-5f6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijr-9T-8F3">
-                                <rect key="frame" x="48" y="190" width="216" height="30"/>
+                                <rect key="frame" x="60" y="190" width="200" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2Yb-aB-xHq"/>
+                                </constraints>
                                 <state key="normal" title="Quiero una hamburguesa!"/>
                                 <connections>
                                     <action selector="cambiarDePaisYDeHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNF-A2-qOj"/>
@@ -49,15 +51,12 @@
                         <color key="backgroundColor" red="0.99215686274509807" green="0.57647058823529407" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="0.64220434100000001" blue="0.1208379121" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ijr-9T-8F3" firstAttribute="centerX" secondItem="lyY-fO-rBR" secondAttribute="centerX" id="FsS-df-ZzR"/>
-                            <constraint firstItem="ijr-9T-8F3" firstAttribute="centerX" secondItem="3jd-3w-lVj" secondAttribute="centerX" id="QmW-Pw-UOG"/>
-                            <constraint firstItem="ijr-9T-8F3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="eLd-4z-227"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="3jd-3w-lVj" secondAttribute="leading" id="i70-M9-kzl"/>
-                            <constraint firstItem="lyY-fO-rBR" firstAttribute="top" secondItem="ijr-9T-8F3" secondAttribute="bottom" constant="53" id="j5y-Jf-2a0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="lyY-fO-rBR" secondAttribute="leading" id="kHp-ew-IXw"/>
-                            <constraint firstItem="ijr-9T-8F3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="mmB-vZ-HhQ"/>
-                            <constraint firstItem="3jd-3w-lVj" firstAttribute="top" secondItem="lyY-fO-rBR" secondAttribute="bottom" constant="59" id="v6D-Yg-0rr"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="lyY-fO-rBR" secondAttribute="leading" id="yYx-ij-NIu"/>
+                            <constraint firstItem="lyY-fO-rBR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Tw-Q5-9vg"/>
+                            <constraint firstItem="3jd-3w-lVj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="333" id="Hcp-gx-etD"/>
+                            <constraint firstItem="3jd-3w-lVj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ij8-34-YeB"/>
+                            <constraint firstItem="ijr-9T-8F3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QxR-Dh-mdr"/>
+                            <constraint firstItem="lyY-fO-rBR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="253" id="TBp-fM-Pwk"/>
+                            <constraint firstItem="ijr-9T-8F3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="rFc-8r-wJU"/>
                         </constraints>
                     </view>
                     <connections>
